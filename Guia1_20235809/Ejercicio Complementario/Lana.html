@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lana del Rey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
+          extend: {
+            colors: {
+              softBeige: '#E6DAC8',
+              skyBlue: '#B3C7E6',
+              oliveGreen: '#D1DDAA',
+              wineRed: '#8A3B46',
+              midnightBlue: '#1A202C',
+            },
+            fontFamily: {
+              sans: ['Bai Jamjuree', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-softBeige bg-wineRed">
+    <section id="hero" class="relative text-center text-softBeige">
+      <img src="../images/cover.jpg" alt="Lana del Rey" class="w-full h-96 object-cover" />
+      <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+        <h1 class="text-5xl font-bold md:text-6xl">Lana del Rey</h1>
+        <p class="text-2xl mt-4">La mejor cantante femenina de la época.</p>
+      </div>
+    </section>
+  
+    <section id="discografia" class="max-w-6xl mx-auto px-10 py-16 bg-softBeige">
+      <h2 class="text-3xl font-bold mb-6 text-wineRed">Discografía</h2>
+      <img src="../images/disco.jpg" alt="Discografía de Lana del Rey" class="mx-auto rounded-lg mb-6" />
+      <p class="text-xl leading-8 text-midnightBlue">Entre sus trabajos más destacados se encuentra "Born to Die", que incluye éxitos como "Video Games" y "Summertime Sadness". Su disco "Ultraviolence" marcó un giro más oscuro con canciones como "West Coast" y "Brooklyn Baby". Además, "Summertime Sadness" es considerada una de sus canciones más populares a nivel mundial.</p>
+    </section>
+
+    <section id="biografia" class="max-w-6xl mx-auto px-10 py-16 bg-midnightBlue text-softBeige">
+      <h2 class="text-3xl font-bold mb-6 text-skyBlue">Biografía</h2>
+      <p class="text-xl leading-8">Lana del Rey, nacida como Elizabeth Woolridge Grant el 21 de junio de 1985 en Nueva York, es una cantante y compositora que irrumpió en la escena musical en 2010. Con un estilo único que fusiona indie pop, dream pop y baroque pop, sus influencias provienen del cine clásico de Hollywood y la literatura. Reconocida por sus letras introspectivas y melancólicas, ha sido nominada a múltiples premios Grammy y ha recibido reconocimientos internacionales. </p>
+    </section>
+
+    <section id="curiosidades" class="max-w-6xl mx-auto px-10 py-16 bg-softBeige">
+      <h2 class="text-3xl font-bold mb-6 text-wineRed">Curiosidades</h2>
+      <img src="../images/gatsby.jpg" alt="Curiosidades de Lana del Rey" class="mx-auto rounded-lg mb-6" />
+      <ul class="list-disc text-left mx-auto text-xl leading-8 text-midnightBlue max-w-3xl">
+        <li class="mb-4">Su canción "Young and Beautiful" fue parte del soundtrack de la película "El Gran Gatsby".</li>
+        <li class="mb-4">Además de su carrera musical, Lana ha publicado un libro de poesía titulado "Violet Bent Backwards Over the Grass".</li>
+        <li class="mb-4">Su estética visual está fuertemente influenciada por los años 60 y el cine clásico de Hollywood.</li>
+        <li class="mb-4">Tiene un estilo vocal único que abarca desde registros graves hasta tonos más suaves y melódicos.</li>
+      </ul>
+    </section>
+
+    <section id="galeria" class="max-w-6xl mx-auto px-10 py-16 bg-skyBlue">
+      <h2 class="text-3xl font-bold mb-6 text-wineRed">Galería</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <img src="../images/lana1.jpg" alt="Imagen 1 de Lana del Rey" class="rounded-lg" />
+        <img src="../images/lana2.jpg" alt="Imagen 2 de Lana del Rey" class="rounded-lg" />
+        <img src="../images/lana3.jpg" alt="Imagen 3 de Lana del Rey" class="rounded-lg" />
+        <img src="../images/lana4.jpg" alt="Imagen 4 de Lana del Rey" class="rounded-lg" />
+        <img src="../images/lana5.jpg" alt="Imagen 5 de Lana del Rey" class="rounded-lg" />
+        <img src="../images/lana6.jpg" alt="Imagen 6 de Lana del Rey" class="rounded-lg" />
+      </div>
+    </section>
+  </body>
+</html>
